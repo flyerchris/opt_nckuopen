@@ -12,3 +12,5 @@ http://www.nckuopen.tw/
 
 after:
 https://flyerchris.github.io/opt_nckuopen/
+
+Just click the menubar to test the scroll animation.
