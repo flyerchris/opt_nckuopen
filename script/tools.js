@@ -1,5 +1,5 @@
 ﻿window.onload=function(){preprocess();}
-document.onwheel = function() {clearInterval(scrollFun);}
+document.onwheel = function() {window.cancelAnimationFrame(scrollFun);}
 window.onscroll=function(){changeNav();}
 
 function navMark(){
@@ -41,34 +41,25 @@ function moveTo(pos){
 	var speed=1;
 	var delta=(pos-sy);
 	if(Math.abs(delta)<speed || pos<0){
-		clearInterval(scrollFun);
+		document.body.scrollTop=pos;
+		document.documentElement.scrollTop=pos;
 		return;
 	}
 	if(sy<pos){
-		if(pos-sy<speed){
-			document.body.scrollTop=pos;
-			document.documentElement.scrollTop=pos;
-		}else{
-			
-			document.body.scrollTop+=delta/20+speed;
-			document.documentElement.scrollTop+=delta/20+speed;
-		}
+		document.body.scrollTop+=delta/20+speed;
+		document.documentElement.scrollTop+=delta/20+speed;
 	}else if(sy>pos){
-		if(sy-pos<speed){
-			document.body.scrollTop=pos;
-			document.documentElement.scrollTop=pos;
-		}else{
-			document.body.scrollTop+=delta/20-speed;
-			document.documentElement.scrollTop+=delta/20-speed;
-		}
+		document.body.scrollTop+=delta/20-speed;
+		document.documentElement.scrollTop+=delta/20-speed;
 	}
-	
+	console.log("scrolling");
+	scrollFun=requestAnimationFrame(function(){moveTo(pos)});
 }
 
 function scrollGoTo(pos){
 	if(pos>document.body.scrollHeight-window.innerHeight){
 		pos=document.body.scrollHeight-window.innerHeight;
 	}
-	clearInterval(scrollFun);
-	scrollFun=setInterval(function(){moveTo(pos)},10);
+	window.cancelAnimationFrame(scrollFun);
+	scrollFun=requestAnimationFrame(function(){moveTo(pos)});
 }
