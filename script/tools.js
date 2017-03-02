@@ -52,7 +52,6 @@ function moveTo(pos){
 		document.body.scrollTop+=delta/20-speed;
 		document.documentElement.scrollTop+=delta/20-speed;
 	}
-	console.log("scrolling");
 	scrollFun=requestAnimationFrame(function(){moveTo(pos)});
 }
 
