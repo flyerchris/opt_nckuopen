@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="freestyle.css">
+<link rel="shortcut icon" sizes="16x16" href="./asset/minilogo.png">
+<title>成大羽球公開賽</title>
+<script src="script/jquery-2.1.4.js"></script>
+<script src="script/tools.js"></script>
+</head>
+
+<body onscroll="changeNav(this)">
+<ul class="nav_origin" id="navori">
+	<img class="logo" src="asset/logo.png"></img>
+	<li>目前賽事</li>
+	<li onclick="scrollGoTo(99999)">聯絡我們</li>
+	<li onclick="scrollGoTo(1800)">賽事介紹</li>
+	<li onclick="scrollGoTo(900)">報名系統</li>
+	<li onclick="scrollGoTo(0)">最新消息</li>
+</ul>
+<ul class="nav_scroll" id="navscroll"></ul>
+<div class="content news">
+	<h1>最新消息</h1>
+	<table id="newsbody"><tbody>
+		<tr>
+			<td>
+				<table id="headnews" class="newstable"><tbody><tr><td>
+					<h1></h1>
+					<p></p>
+					<div class="newsfooter">
+						<div class="newsdate">0000-00-00</div>
+						<div class="newsmore">READ MORE <img src="asset/more.png"></img></div>
+					</div>
+				</td></tr></tbody></table>
+			</td>
+			<td>
+				<table id="othernews" class="newstable"><tbody>
+					<tr>
+						<td>
+							<h2></h2>
+							<div class="newsfooter">
+								<div class="newsdate">0000-00-00</div>
+								<div class="newsmore">READ MORE <img src="asset/more.png"></img></div>
+							</div>
+						</td>
+						<td>
+							<h2></h2>
+							<div class="newsfooter">
+								<div class="newsdate">0000-00-00</div>
+								<div class="newsmore">READ MORE <img src="asset/more.png"></img></div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h2></h2>
+							<div class="newsfooter">
+								<div class="newsdate">0000-00-00</div>
+								<div class="newsmore">READ MORE <img src="asset/more.png"></img></div>
+							</div>
+						</td>
+						<td>
+							<h2></h2>
+							<div class="newsfooter">
+								<div class="newsdate">0000-00-00</div>
+								<div class="newsmore">READ MORE <img src="asset/more.png"></img></div>
+							</div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td>
+		</tr>
+	</tbody></table>
+	<div id="morenews"><a href="oldernews.php?p=0">PREVIOUS NEWS <img src="asset/rightarrow.png"></a></div>
+</div>
+<div class="content signup">
+	<h1>報名系統</h1>
+	<div class="signup_content">
+		<p>
+		2016成大羽球公開賽即將開始報名！<br>報名時間為 4/22-5/20 ( 當天17:00止 )<br>報名請點選以下按鈕進入報名系統 !
+		</p>
+		<a href="http://registry.nckuopen.tw/" target="_blank"><div class="signup_button"><div style="font-size:25px;text-align:center;">我要報名</div></div></a>
+	</div>
+</div>
+<div class="content about">
+	<h1>賽事介紹</h1>
+	<div class="about_content">
+		<h2>全國知名的羽球經典賽事</h2>
+		<p>
+		成大羽球公開賽從民國83年舉辦至今即將要邁入第22屆。最早第1屆原為校長盃，對象為全校師生並做排名，從第2屆開始擴大邀請校友及全台各大專院校學生參賽。目前賽制分為四大組別，除主要的公開組、一般組等級的全國大專生的競爭外，尚有校內組及青壯組，特別邀請所有成大的教職員及畢業校友參賽，吸引越來越多校友及大專羽球好手與賽，成為全國知名的羽球經典賽事，也逐漸吸引許多知名企業的贊助，至第21屆報名參賽學校有118所，選手已經達1,582人，早已成為國內大專生羽球愛好者年度必參與的大型盛會。而每年7月籌辦的羽球公開賽對成大來說是一項傳統也是驕傲，博物館也以專案計畫收錄相關事件存留於校史，許多畢業的校友也常藉此機會回來共襄盛舉同時聯絡感情。
+		</p>
+		<br><h2>思考更多不同的可能性</h2>
+		<p>
+		近年來的成大公開賽逐漸開始提升格局，思考更多不同的可能性。除了特別訂製各式各樣的專屬紀念品、紀念衫及紀念拍外，更屢次邀請到球星為比賽開球及表演賽，及「捐發票，獻愛心」的公益活動。而在前年(2014年)韓國大專羽球協會更派出了考察團蒞臨比賽考察及與選手交流，足見成大公開賽更宏觀的國際視野，登峰造極的精神。而難能可貴的是，此活動完全是由成大在校的學生所規劃、籌辦而成，而學生在精心籌畫的同時，難免會有疏忽及不足的地方，請各界不吝指教，向我們反應哪裡做的不好，讓我們一起使成大公開賽更臻完美。
+		<br>期許未來的成大公開賽能更加完整，更加盛大，不只提供成大校友聯絡感情的場合，更成為全國羽球好手切磋球技，登峰造極的盛會。
+		</p>
+		<h2 style="float:right">
+		更多賽事介紹
+		<img src="asset/more.png"></img>
+		</h2>
+	</div>
+</div>
+<div class="footer">
+	<div class="footer_title">
+		<a target="_blank" href="https://www.facebook.com/%E6%88%90%E5%A4%A7%E7%BE%BD%E7%90%83%E5%85%AC%E9%96%8B%E8%B3%BD-NCKU-OPEN-109256435927376/">
+		<img class="footer_fbimg" src="asset/fb.png"></img></a>
+		<div class="year">2016</div>
+		<div class="nopen">NCKUOPEN</div>
+	</div>
+	<hr>
+	<div style="padding-left:50px;">
+		<img src="asset/mail.png"></img>
+		<img style="margin:0px 140px 0px 140px;" src="asset/phone.png"></img>
+		<img src="asset/address.png"></img>
+	</div>
+	<hr>
+	<p>
+	© Copyright 2016 NCKUOPEN<br>
+Website and content created and designed by 朱紹帆 and 朱承昱 .
+	</p>
+</div>
+</body>
+</html>

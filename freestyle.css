@@ -1,0 +1,229 @@
+﻿@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+body{
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight:300;
+	margin:0px;
+	color:#FFF;
+	background-color:#F00;
+	word-wrap: break-word;
+word-break: break-all;
+}
+a{
+	color:#FFF;
+	text-decoration:none;
+}
+h1{
+	font-weight:300;
+	margin:0px;
+	font-size:43px;
+}
+h2{
+	font-weight:400;
+	font-size:30px;
+}
+p{
+	font-size:18px;
+	line-height:200%;
+}
+
+.nav_origin{
+	width:calc(100% - 140px);
+	margin:0px;
+	padding:0px;
+	padding-top:20px;
+	position:fixed;
+	top:0px;
+	left:80px;
+}
+.nav_origin li{
+	margin:20px;
+	margin-top:45px;
+	padding-bottom:10px;
+	list-style-type: none;
+	float:right;
+}
+.nav_origin li:hover{
+	cursor:pointer;
+	border-bottom:5px solid #CC2;
+}
+.nav_origin .logo{
+	margin:0px;
+	float:left;	
+	height:110px;
+	width:auto;
+}
+.nav_scroll{
+	z-index:9999;
+	background-color:rgba(36,66,137,0.8);
+	width:calc(100% - 140px);
+	margin:0px;
+	padding-left:80px;
+	padding-right:60px;
+	position:fixed;
+	top:0px;
+}
+.nav_scroll li{
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:18px;
+	height:37px;
+	list-style-type: none;
+	vertical-align:middle;
+	float:right;
+}
+.nav_scroll li:hover{
+	cursor:pointer;
+	border-bottom:5px solid #CC2;
+}
+.nav_scroll .logo{
+	margin:0px;
+	margin-top:5px;
+	margin-bottom:5px;
+	float:left;	
+	height:50px;
+	width:auto;
+}
+.content{
+	width:calc(100% - 160px);
+	height:900px;
+	padding-left:80px;
+	padding-right:80px;
+	background-color:#000;
+	background-position:center top;
+	background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.news{
+	background-image: url("./asset/bg_news.jpg");
+}
+.news h1{
+	font-size:40px;
+	padding-top:160px;
+}
+#newsbody{width:100%;}
+#newsbody>tbody>tr>td{width:50%;}
+.newstable{width:100%;height:390px;}
+.newstable h1{
+	height:80px;
+	overflow:hidden;
+	padding:0;
+	margin:0;
+	margin-top:15px;
+	font-size:36px;
+	line-height:110%;
+}
+.newstable h2{font-size:22px;height:66px;
+	overflow:hidden;}
+.newstable td{
+	padding:0px 10px;
+	vertical-align:top;
+	position:relative;
+	background-image: url("./asset/news_gardient.png");
+	background-size: 100% auto;
+	background-repeat:repeat-y;
+	border-left:10px solid #FFF;
+}
+.newstable td:hover{border-left:10px solid #EE4;}
+.newsfooter{
+	position:absolute;width:calc(100% - 20px);
+	bottom:30px;
+}
+.newsfooter .newsdate{float:left;}
+.newsfooter .newsmore{float:right;}
+#headnews p{
+	height:180px;
+	overflow:hidden;
+}
+#headnews .newsfooter{font-size:23px;}
+#headnews img{height:20px;width:auto;}
+#othernews td{width:50%;height:50%;}
+#othernews img{height:15px;width:auto;}
+#morenews{margin-top:10px;font-size:26px;text-align:right;}
+#morenews img{height:20px;width:auto;}
+
+.signup{background-image: url("./asset/bg_system.jpg");}
+.signup h1{
+	padding-top:100px;
+	text-align:center;
+}
+.signup_content{
+	width:400px;
+	margin:auto;
+	margin-top:30px;
+	border-top:15px solid #FFF;
+	padding:50px 25px 200px 25px;
+	text-align:center;
+	background-image: url("./asset/gardient.png");
+	background-size: auto 100%;
+	background-repeat:repeat-x;
+}
+.signup_button{
+	margin:auto;
+	margin-top:100px;
+	width:120px;
+	border:1px solid #FFF;
+	padding:10px 40px 10px 40px;
+	transition:all 200ms;
+}
+.signup_button:hover{
+	cursor:pointer;
+	color:#000;
+	background-color:rgba(255,255,255,1);
+	border:1px solid #CC2;
+}
+
+.about{
+	height:1100px;
+	background-image: url("./asset/bg_about.jpg");
+}
+.about h1{
+	padding-top:110px;
+	text-align:right;
+}
+.about_content{
+	height:820px;
+	overflow-y:auto;
+	margin-top:30px;
+	border-top:15px solid #FFF;
+	padding:60px;
+	padding-bottom:0px;
+	padding-top:15px;
+	background-image: url("./asset/gardient.png");
+	background-size: auto 100%;
+	background-repeat:repeat-x;
+}
+.footer{
+	width:calc(100% - 160px);
+	padding:20px 80px 20px 80px;
+	position:relative;
+	background-color:#111;
+	text-align:center;
+}
+.footer_title{
+	position:relative;
+}
+.footer_fbimg{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	vertical-align:bottom;
+}
+.footer .year{
+	font-size:20px;
+}
+.footer .nopen{
+	line-height:100%;
+	font-size:25px;
+	font-weight:900;
+}
+.footer hr{
+	margin:15px 0px 15px 0px;
+}
+.footer p{
+	margin-top:50px;
+	line-height:130%;
+	font-size:12px;
+}
