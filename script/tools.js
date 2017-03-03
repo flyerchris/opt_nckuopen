@@ -46,11 +46,11 @@ function moveTo(pos){
 		return;
 	}
 	if(sy<pos){
-		document.body.scrollTop+=delta/20+speed;
-		document.documentElement.scrollTop+=delta/20+speed;
+		document.body.scrollTop+=delta/15+speed;
+		document.documentElement.scrollTop+=delta/15+speed;
 	}else if(sy>pos){
-		document.body.scrollTop+=delta/20-speed;
-		document.documentElement.scrollTop+=delta/20-speed;
+		document.body.scrollTop+=delta/15-speed;
+		document.documentElement.scrollTop+=delta/15-speed;
 	}
 	scrollFun=requestAnimationFrame(function(){moveTo(pos)});
 }
