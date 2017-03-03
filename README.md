@@ -5,7 +5,7 @@ The scroll animation looks leggy.
 
 Let's see if I can smooth it.
 
-You can see the difference between before and after modify by visiting the two web below.
+You can see the difference between before and after modifying by visiting the two web below.
 
 befor:
 http://www.nckuopen.tw/
